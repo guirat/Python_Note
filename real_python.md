@@ -42,6 +42,11 @@ class A(object):
 
 sorted(animals, key=lambda animal: animal['age'], reversed=True)
 animal.sort(key=lambda animal: animal['age'])
-  
+
+### Set
+
+return (len(set(s))) // Count number of unique character in a string s
+Or return (len({c for c in s}))
+
 
 ```
