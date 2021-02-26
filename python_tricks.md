@@ -58,6 +58,7 @@ Or return (len({c for c in s}))
 
 sql alchemy and postgres
 
+```python
  #for JSONB type
   objects = objects.filter(objectModel.attribute.has_key('field'))
 objects1 = objects.filter(not_(text("objects.attribute::jsonb ? 'field'")))
@@ -68,3 +69,4 @@ objects1 = objects.filter(not_(text("objects.attribute::jsonb ? 'field'")))
 
   objects = objects.filter(not_(objectModel.attribute['field'].astext.cast(String).contains("word")))
   objects = objects.filter(not_(objectModel.attribute['field'].as_string().contains("word")))
+```
